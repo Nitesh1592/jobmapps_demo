@@ -1,0 +1,20 @@
+{
+  "name": "jobmapps",
+  "main": "app.js",
+  "authors": [
+    "Nitesh"
+  ],
+  "description": "Job portal",
+  "keywords": [
+    "app"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
