@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <!--<base href="/jobmapps/">-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Job Board</title>
+        <title>Job Mapps</title>
         <!-- Bootstrap -->
         <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Bootstrap -->
@@ -16,7 +16,7 @@
         <!-- fonts -->
         <link href='http://fonts.googleapis.com/css?family=Nunito:300,400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700' rel='stylesheet' type='text/css'>
-        <link href='assets/fonts/css/font-awesome.css' rel="stylesheet" type="text/css">
+        <link href='assets/css/fonts/css/font-awesome.css' rel="stylesheet" type="text/css">
         <!-- fonts -->
 
         <!-- Owl Carousel -->
@@ -37,12 +37,12 @@
           <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
+
     </head>
     <body>
-        
-            <div id="wrapper"><!-- start main wrapper -->
-    <div id="header"><!-- start main header -->
+
+        <div id="wrapper"><!-- start main wrapper -->
+            <div id="header"><!-- start main header -->
                 <div class="top-line">&nbsp;</div>
                 <div class="top"><!-- top -->
                     <div class="container">
@@ -55,8 +55,8 @@
                                 <li class="item"><a href="" target="blank"><i class="fa fa-google-plus"></i></a></li>
                             </ul>
                             <ul class="media-top-2 clearfix">
-                                <li><a href="" class="btn btn-default btn-blue btn-sm">REGISTER</a></li>
-                                <li><a href="" class="btn btn-default btn-green btn-sm" >LOG IN</a></li>
+                                <li><a href="#/register" class="btn btn-default btn-blue btn-sm">REGISTER</a></li>
+                                <li><a href="#/sign-in" class="btn btn-default btn-green btn-sm" >LOG IN</a></li>
                             </ul>
                             <div class="clearfix"></div>
                         </div>
@@ -65,34 +65,30 @@
                 <div class="container"><!-- container -->
                     <div class="row">
                         <div class="col-md-4"><!-- logo -->
-                            <a href="/jobmapps/" title="Job Board" rel="home">
-                                <img class="main-logo" src="images/logo.png" alt="job board" />
+                            <a href="#/" title="Job Mapps" rel="home">
+                                <img class="main-logo" src="assets/img/logo.png" alt="job mapps" />
                             </a>
                         </div><!-- logo -->
                         <div class="col-md-8 main-nav"><!-- Main Navigation -->
                             <a id="touch-menu" class="mobile-menu" href="#"><i class="fa fa-bars fa-2x"></i></a>
                             <nav>
                                 <ul class="menu">
-                                    <li><a href="/">HOME</a>
+                                    <li><a href="#/">HOME</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#/about-us">About Page</a></li>
-                                            <li><a href="blog.html">Blog Page</a></li>
-                                            <li><a href="detail-blog.html">Single Blog Page</a></li>
-                                            <li><a href="job-detail.html">Single Job Page</a></li>
-                                            <li><a href="homepage-joblisting.html">Job Listing</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="register.html">Register Page</a></li>
-                                            <li><a href="signin.html">Login Page</a></li>
-                                            <li><a href="short-codes.html">Short Code</a></li>
-                                            <li><a  href="post-job.html">Post a Job</a></li>
-                                            <li><a  href="post-resume.html">Post a Resume</a></li>
+                                            <li><a href="#/about-us">About JobMapps</a></li>
+                                            <li><a href="#/detail-blog/10">Single Blog Page</a></li>
+                                            <li><a href="#job-detail/10">Single Job Page</a></li>
+                                            <li><a href="#/job-list">Job Listing</a></li>
+<!--                                            <li><a href="short-codes.html">Short Code</a></li>-->
+                                            <li><a  href="#/post-job">Post a Job</a></li>
+                                            <li><a  href="#/post-resume">Post a Resume</a></li>
                                         </ul>
                                     </li>
-                                    <li><a  href="#">JOB SEARCH</a></li>
-                                    <li><a  href="post-job.html">POST A JOB</a></li>
-                                    <li><a  href="post-resume.html">POST A RESUME</a></li>
-                                    <li><a  href="#">PRICING</a></li>
-                                    <li><a  href="short-codes.html">SHORTCODE</a></li>
+                                    <li><a  href="#/job-list">JOB SEARCH</a></li>
+                                    <li><a  href="#/post-job">POST A JOB</a></li>
+                                    <li><a  href="#/post-resume">POST A RESUME</a></li>
+                                    <li><a href="#/blog">Blogs</a></li>
+                                    <li><a href="#/contact-us">Contact Us</a></li>
                                 </ul>
                             </nav>
                         </div><!-- Main Navigation -->
@@ -100,10 +96,10 @@
                     </div>
                 </div><!-- container -->
             </div><!-- end main header -->
-            
+
             <div ng-view="" id="ng-view"></div>
 
-<div id="footer"><!-- Footer -->
+            <div id="footer"><!-- Footer -->
                 <div class="container"><!-- Container -->
                     <div class="row">
                         <div class="col-md-3 footer-widget"><!-- Text Widget -->
@@ -168,19 +164,20 @@
 
                 </div><!-- Container -->
             </div><!-- Footer -->
-</div>
+        </div>
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        
 
 
-            
+
+
         <script src="assets/libs/angular/angular.min.js" type="text/javascript"></script>
         <script src="assets/libs/angular/angular-route.min.js" type="text/javascript"></script>
         <script src="assets/libs/angular/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script>
+        
         <script src="app.js" type="text/javascript"></script>
         <script src="app.routes.js" type="text/javascript"></script>
         <script src="assets/js/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
@@ -201,12 +198,16 @@
         <script type="text/javascript" src="assets/js/jquery.dependClass-0.1.js"></script>
         <script type="text/javascript" src="assets/js/draggable-0.1.js"></script>
         <script type="text/javascript" src="assets/js/jquery.slider.js"></script>
+        <!--<script type="text/javascript" src="assets/js/job-board.js"></script>-->
         <!-- Form Slider -->
 
         <!-- Map -->
         <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
         <!-- Map -->
 
-<!--        <script src="js/job-board.js"></script>-->
+                
+        
+        <script src="components/home/homecontroller.js" type="text/javascript"></script>
+        <script src="components/static_page/staticPageCtrl.js" type="text/javascript"></script>
     </body>
 </html>
